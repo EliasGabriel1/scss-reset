@@ -1,0 +1,42 @@
+
+$colors: (
+  primary: #4f46e5,
+  secondary: #06b6d4,
+  background: #ffffff,
+  text: #111827
+);
+
+$fonts: (
+  base: 'Inter, sans-serif',
+  heading: 'Poppins, sans-serif'
+);
+
+$font-sizes: (
+  sm: 0.875rem,
+  md: 1rem,
+  lg: 1.25rem,
+  xl: 2rem
+);
+
+
+$spacing: (
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 24px
+);
+
+
+$themes: (
+  light: (
+    color: $colors
+  ),
+  dark: (
+    color: (
+      primary: #818cf8,
+      secondary: #22d3ee,
+      background: #0f172a,
+      text: #f9fafb
+    )
+  )
+);
