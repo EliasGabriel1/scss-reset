@@ -1,27 +1,90 @@
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-  -webkit-font-smoothing: antialiased;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  line-height: 1.5;
+  min-height: 100vh;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
 }
 
-img, picture, video, canvas {
-  max-width: 100%;
+
+body {
+  font-family: var(--font-base, sans-serif);
+  font-size: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+
+img, picture, video, canvas, svg {
   display: block;
+  max-width: 100%;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
